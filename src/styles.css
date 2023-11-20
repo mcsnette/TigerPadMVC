@@ -1,1 +1,468 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  display: flex;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 350px;
+  border-radius: 25px;
+  margin-left: 300px;
+  margin-top: 100px;
+  align-items: flex-end; /* Align items to the right */
+  justify-content: flex-end; /* Align items to the bottom */
+}
+
+.register-container h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  line-height: 0.9;
+}
+
+.community,
+.productivity {
+  color: #b33c3c; /* Color for "community" and "productivity" text */
+}
+.made-with-more {
+  color: #bfb8b8; /* Color for "made with more" text */
+}
+
+/* Adjust the margin or padding for the div elements inside .register-container */
+.register-container div {
+  margin-bottom: 0.5px;
+}
+
+.register-form-container {
+  background-color: #fff;
+  width: 500px;
+  height: 430px;
+  border-radius: 25px;
+  margin-left: 90px;
+  margin-top: 100px;
+  padding: 10px;
+}
+.register-field {
+  border-radius: 13px;
+  width: 400px;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-bottom: 6px;
+  border: 2px solid #d9d9d9;
+}
+
+.register-field::placeholder {
+  color: #d9d9d9; /* Change the color of the placeholder text */
+  font-size: 15px;
+}
+
+.register-form {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.register-form h3 {
+  color: #525252;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+hr {
+  width: 70%;
+  background-color: #d9d9d9 !important;
+  height: 1.5px;
+  border: none;
+  margin: -5px auto 5px auto;
+}
+
+label {
+  display: block; /* Make labels block-level elements for better spacing */
+  margin-bottom: 8px;
+  margin-left: 50px;
+  color: #545454;
+  font-weight: bold;
+}
+
+.btn-main {
+  background-color: #a62424;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  padding: 1px;
+  width: 270px;
+  height: 45px;
+  font-size: 20px;
+  margin-bottom: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.btn-login {
+  background-color: #525252;
+  color: #fff;
+  height: 38px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  display: inline-block; /* Ensure the anchor tag behaves like a block element */
+  text-align: center; /* Center the text within the anchor tag */
+  line-height: 38px; /* Vertically center the text */
+  text-decoration: none; /* Remove default underline */
+}
+
+.register-logo {
+  margin-top: 10px;
+}
+
+.register-logo img {
+  width: 180px;
+  height: auto;
+}
+
+.secondary-container {
+  text-align: center;
+  font-weight: bold;
+  color: #525252;
+  margin-left: 900px;
+  margin-bottom: auto;
+  width: 300px;
+  height: 100px;
+}
+
+.secondary-container p {
+  margin-bottom: 5px; /* Adjust as needed */
+}
+
+/* ... NAAVIGATION BAR */
+
+.navbar {
+  background-color: #f6f6f6;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+  margin-right: 20px;
+}
+
+.navbar a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 13px;
+  color: #525252; /* Set the color of the text */
+  font-size: 30px; /* Adjust the font size */
+  font-weight: bold; /* Set font weight to bold if needed */
+  /* Add any other styles as needed */
+}
+
+.navbar a:hover {
+}
+
+.navbar img {
+  width: 195px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 27px; /* Add some right margin for spacing */
+  margin-top: 17px;
+}
+/* ... END OF NAVIGATION BAR */
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .register-container {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .register-form-container {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .secondary-container {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar ul {
+    text-align: center;
+  }
+
+  .navbar li {
+    float: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .navbar img {
+    margin: 0;
+  }
+
+  .navbar a {
+    padding: 10px;
+    margin-top: 0;
+    font-size: 18px;
+  }
+}
+
+/* ... USER LOGIN PAGE - HTML */
+
+.login-form-container {
+  background-color: #fff;
+  width: 500px;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.user-login-form {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.user-login-form h3 {
+  color: #525252;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.user-login-form .signup-text {
+  color: #525252;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+
+.user-login-form .admin-text {
+  color: #525252;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.user-login-field {
+  border-radius: 13px;
+  width: 400px;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-bottom: 6px;
+  border: 2px solid #d9d9d9;
+}
+
+.user-login-field::placeholder {
+  color: #d9d9d9; /* Change the color of the placeholder text */
+  font-size: 15px;
+}
+
+.btn-admin {
+  background-color: #a6a4a4;
+  color: #fff;
+  height: 38px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 7px;
+}
+
+.btn-signup {
+  background-color: #bfb8b8;
+  color: #fff;
+  height: 38px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 7px;
+}
+
+.login-hr {
+  width: 80%;
+  background-color: #d9d9d9 !important;
+  height: 1.5px;
+  border: none;
+  margin: 1px auto 10px auto; /* Adjust the margin as needed */
+}
+
+/* ... ADMIN LOGIN PAGE - HTML */
+
+.admin-login-form-container {
+  background-color: #fff;
+  width: 500px;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.admin-login-form {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.admin-login-form h3 {
+  color: #525252;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.admin-login-form .user-text {
+  color: #525252;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.admin-login-field {
+  border-radius: 13px;
+  width: 400px;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-bottom: 6px;
+  border: 2px solid #d9d9d9;
+}
+
+.admin-login-field::placeholder {
+  color: #d9d9d9; /* Change the color of the placeholder text */
+  font-size: 15px;
+}
+
+.btn-user {
+  background-color: #a6a4a4;
+  color: #fff;
+  height: 38px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 7px;
+}
+
+.admin-login-hr {
+  width: 80%;
+  background-color: #d9d9d9 !important;
+  height: 1.5px;
+  border: none;
+  margin: 1px auto 10px auto; /* Adjust the margin as needed */
+}
+
+/* ... ABOUT PAGE - HTML */
+
+/* ... USER PROFILE - HTML */
+
+.navbar-logged {
+  background-color: #fff;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar-logged ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.navbar-logged li {
+  margin-right: 18px;
+}
+
+.logout-btn {
+  margin-left: auto; /* Push the "Log Out" button to the right */
+  margin-top: 4px;
+}
+
+.navbar-logged .logout-btn a {
+  background-color: #545454;
+  color: #fff;
+  border-radius: 25px;
+  width: 120px;
+  height: 20px;
+  border: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-logged a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 10px;
+  color: #525252;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.navbar-logged a:hover {
+}
+
+.navbar-logged img {
+  width: 195px;
+  height: auto;
+  margin-left: 27px;
+  margin-top: 14px;
+}
+
+.user-profile-container {
+  background-color: #fff;
+  width: 1100px;
+  height: 400px;
+  border-radius: 25px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
